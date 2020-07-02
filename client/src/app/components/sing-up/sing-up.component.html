@@ -1,0 +1,22 @@
+<div class="form container">
+    <div class="form-signin">
+        <form [formGroup]="signupFrm">
+            <h5 class="text-center">Register</h5>
+            <div class="form-group">
+                <label for="username">username</label>
+                <input type="text" formControlName="username" #username class="form-control" placeholder="Enter username"/>
+            </div>
+            <div class="form-group">
+                <label>password</label>
+                <input type="text" formControlName="password" #password class="form-control" placeholder="passwoerd"/>
+            </div>
+            <div class="form-group">
+                <button type="submit" [disabled]="signupFrm.invalid"
+                class="btn btn-outline-primary btn-block"
+                (click)="onSign(signupFrm.value)">Submit </button>
+              
+            </div>
+
+        </form>
+    </div>
+</div>

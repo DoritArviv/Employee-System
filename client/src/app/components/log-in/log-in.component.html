@@ -1,0 +1,21 @@
+<div class="form container">
+    <div class="form-signin">
+        <form [formGroup]="loginFrm" (ngSubmit)="onLogin(loginFrm.value)">
+            <h5 class="text-center">Log-in</h5>
+            <div class="form-group">
+                <label for="username">username</label>
+                <input type="text" formControlName="username" #username class="form-control" placeholder="Enter username"/>
+            </div>
+            <div class="form-group">
+                <label>password</label>
+                <input type="text" formControlName="password" #password class="form-control" placeholder="passwoerd"/>
+            </div>
+            <div class="form-group">
+                <button type="submit" [disabled]="loginFrm.invalid"
+                class="btn btn-outline-primary btn-block">Submit </button>
+                <a (click)="Sign()" class="Sign">sing up</a>
+            </div>
+
+        </form>
+    </div>
+</div>

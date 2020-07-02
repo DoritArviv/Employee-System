@@ -1,0 +1,26 @@
+.form-signin{
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    
+}
+.alert{
+font-size: 10px;
+}
+.form{
+    padding: 2em 0;
+}
+.Sign {
+    display: inline-block;
+    margin-top: .5rem;
+    color: rgb(133, 205, 247);
+  }
+  
+  .Sign:hover {
+    color: rgb(88, 189, 248);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  

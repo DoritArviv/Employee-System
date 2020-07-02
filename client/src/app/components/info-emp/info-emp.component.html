@@ -1,0 +1,35 @@
+<div class="container">
+    <nav class=" navber navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="image featured"><img src="assets/images/two-people.jpg" style="float:center" height="50px" width="50px"/></a>
+              </li>  &nbsp;  &nbsp;
+              <li class="nav-item">
+                <h3>Employees</h3>
+            </li>
+            </ul> 
+        </div>
+    </nav>
+    
+    <h5>Employee info : {{infoObj.empName | titlecase}} </h5>
+    <div class="card">
+        <div class="card-body row">
+            <div class="col-7 col-6-medium col-12-small">  
+                <ul>
+                    <li><label>ID: </label> {{infoObj.empId}}</li>
+                    <li><label>Name: </label> {{infoObj.empName | titlecase}}</li>
+                    <li><label>Family: </label> {{infoObj.empFamily | titlecase}}</li>
+                    <li><label>Email: </label> {{infoObj.empEmail}}</li>
+                    <li><label>Address: </label> {{infoObj.empAddress | titlecase}}</li>
+                </ul>
+            </div>
+            <div class="col-5 col-6-medium col-12-small">
+                <a class="image featured"><img src="https://source.unsplash.com/random/250x200"/></a>
+            </div>
+            <div class="col-12">
+                <button (click)="backToLst()" class="btn btn-primary"> Back to list </button>
+            </div>
+        </div>
+    </div>
+</div>

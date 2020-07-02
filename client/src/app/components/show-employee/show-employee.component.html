@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <thead class="table-primary">
+        <td>Id</td>
+        <td>Name</td>
+        <td>Last Name</td>
+        <td>Address</td>
+        <td  colspan="3">Action</td>
+    </thead>
+    <tbody>
+        <tr *ngFor='let x of lstEmp'> 
+        <td>{{x.empId}}</td>
+        <td>{{x.empName | titlecase}} </td>
+        <td>{{x.empFamily | titlecase}} </td>
+        <td>{{x.empAddress | titlecase}} </td>
+        <td><a [routerLink]="['Edit',x._id]" class="btn btn-primary">Edit</a></td>
+        <td><a [routerLink]="['Info',x._id]" class="btn btn-info" >Info</a></td>
+        <td><a (click)="deleteEmp(x._id)" class="btn btn-danger">Delete</a></td>
+    </tr>
+    </tbody>
+</table>
+
+
