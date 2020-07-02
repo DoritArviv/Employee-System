@@ -1,6 +1,6 @@
-# MyEmployee
+# Employee-System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+This project is built with angular9, NodeJS and MongoDB
 
 ## Development server
 
